@@ -1,0 +1,64 @@
+@charset "utf-8";
+@import url("reset.css");
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #f2f2f2;
+}
+.container {
+  background-color: #fff;
+  padding: 40px;
+  width: 50%;
+  border-radius: 5px;
+  max-width: 400px;
+  min-width: 250px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 100px auto;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+  gap: 20px;
+  padding: 10px;
+}
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #cbcaca;
+}
+.fas {
+  color: #cbcaca;
+}
+.fa-lock {
+  color: red;
+}
+button[type="submit"] {
+  background-color: cornflowerblue;
+  border: 0;
+  padding: 5px;
+  transition: all 0.3s;
+}
+button[type="submit"]:hover {
+  background-color: rgb(62, 91, 145);
+  color: #fff;
+}
+input[type="button"] {
+  background-color: coral;
+  border: 0;
+  width: 100px;
+  display: block;
+  margin: auto;
+  /* margin-left: auto; */
+}
+.open {
+  color: #fff;
+  font-size: 12px;
+  padding: 5px;
+}

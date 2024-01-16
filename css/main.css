@@ -1,0 +1,236 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,700&display=swap");
+@import url(reset.css);
+/* font-family: 'Roboto', sans-serif; */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+img{
+    vertical-align: middle;
+}
+.wrap{
+  display: flex;
+  flex-direction: column;
+}
+/* 상단 */
+header {
+  background-color: bisque;
+}
+nav {
+  background-color: aquamarine;
+  padding: 20px;
+  text-align: right;
+}
+nav > * {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #555;
+  margin: 0 5px;
+  position: relative;
+  cursor: pointer;
+}
+nav a img {
+  width: 14px;
+padding-bottom: 3px;
+}
+#menu{
+    opacity: 0.5;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+}
+nav span{
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0,0,0,0.2);
+display: block;
+position: absolute;
+top: -9px;
+left: -8px;
+border-radius: 50%;
+opacity: 0;
+transition: all 0.3s;
+}
+nav span:hover{
+    opacity: 1;
+}
+#mail:hover{
+text-decoration: underline;
+}
+#login {
+  width: 70px;
+  height: 30px;
+  color: #fff;
+  background-color: #4484f3;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+#login:hover {
+    background-color: #0e254b;
+}
+/* main */
+.main-wrap{
+  /* margin:  0 auto; */
+  display: flex;
+  /* text-align: center; */
+flex-direction: column;
+align-items: center;
+  margin-top: 200px;
+}
+.search_bar{
+  
+  width: 40%;
+  max-width: 560px;
+  min-width: 250px;
+  margin: 30px auto;
+  border: 1px solid #ccc;
+border-radius:100px;
+display: inline-block;
+padding: 3px 25px;
+display: flex;
+align-items: center;
+box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.search_bar a img{
+  width: 24px;
+  margin-left: 5px;
+}
+.search{
+  margin: 10px;
+}
+.search_bar input{
+  width: 85%;
+  border: 0;
+  outline: none;
+}
+/* 플러스 */
+.plus{
+  width:50% ;
+  /* background-color: bisque; */
+
+
+
+}
+.plus ul{
+  display: flex;
+  justify-content: space-around
+  
+}
+.plus ul li{
+  position: relative;
+}
+.plus ul li a{
+  width: 107px;
+  height: 107px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ position: relative;
+ padding: 10px;
+ margin: 0 auto;
+ z-index: 99;
+}
+.plus ul li a img{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+top: 21px;
+/* top: 50%;
+transform: translatey(-50%); */
+
+}
+.plus ul li a span{
+  font-size: 14px;
+  color: #333;
+  line-height:17px;
+  /* 말줄임 */
+  white-space: nowrap;/*줄 바꿈 방지*/
+  text-overflow: ellipsis;/*말줄임 표시 (...)추가*/
+  max-width: 80px;/*최대 너비 설정*/
+  overflow: hidden;/*넘침 처리*/
+}
+.hover-bg{
+  width: 107px;
+  height: 107px;
+  background-color: rgba(0,0,0,0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 3px;
+  opacity: 0;
+ 
+}
+.plus ul li:hover .hover-bg{
+  opacity: 1;
+}
+.plus ul li:hover .hover-bg img{
+  opacity: 1;
+  /* transition: all 0.6s; */
+  transition-delay: 0.7s;
+}
+.hover-bg img{
+  position: absolute;
+  top:8px;
+  right: 0;
+  opacity: 0;
+}
+.bg{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+ button{
+display: inline-block;
+  height: 30px;
+  border: 0;
+  padding: 3px 15px;
+  margin: 0 3px;
+ background-color: #f4f4f4;
+ border: 1px solid transparent;
+ border-radius: 3px;
+ color: #666;
+ cursor: pointer;
+}
+.button button:hover{
+  border: 1px solid #ccc;
+  background: linear-gradient(to bottom, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+.button{
+  text-align: center;
+  margin: 50px;
+display: flex;
+justify-content: center;
+gap: 20px;
+}
+
+/* =====공지사항 */
+#container{
+  width: 250px;
+  height: 375px;
+  background: url("../images/notice.jpg");
+margin: 100px auto;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 10px;
+}
+h1{
+  margin-bottom:30px;
+  font-size: 30px;
+  font-weight: 700;
+}
